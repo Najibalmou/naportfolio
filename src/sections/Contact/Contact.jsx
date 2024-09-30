@@ -10,7 +10,7 @@ function Contact() {
 
     emailjs
       .sendForm('service_siwcxkj', 'template_ffpxp53', form.current, {
-        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       })
       .then(
         () => {
